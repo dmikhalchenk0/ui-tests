@@ -14,4 +14,4 @@ jobs:
       - name: Run tests
         env:
           TESTOMATIO_API_KEY: ${{ secrets.TESTOMATIO_API_KEY }}
-        run: pytest --testomatio
+        run: pytest --testomatio --alluredir allure_results
